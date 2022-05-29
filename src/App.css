@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+  width: 35%;
+  border: 1px solid rgb(226, 225, 225);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttonDiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  border-bottom: 1px solid rgb(195, 194, 194);
+  height: 60px;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonDiv div {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.buttonDiv div button {
+  background: none;
+  border: none;
+}
+
+.timerIcon img,
+.stopwatchIcon img {
+  width: 20px;
+}
+
+.buttonDiv div::after {
+  border-bottom: 2px solid blue;
+}
+
+.App1 {
+  display: flex;
+}
+.btnDiv {
+  margin-top: 20px;
+  border-top: 1px solid rgb(163, 163, 163);
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.btn1 {
+  background-color: rgb(0, 110, 255);
+  padding: 6px 15px;
+  border: none;
   color: white;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.App-link {
-  color: #61dafb;
+.btn2 {
+  background-color: rgb(228, 240, 250);
+  padding: 6px 15px;
+  color: black;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Time {
+  text-align: left;
+  margin-left: 8%;
+  font-size: 40px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Timer,
+.Stopwatch {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.iconDiv{
+  /* border: 2px solid red; */
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconDiv img{
+  width: 25px;
 }
